@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"> 
+
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+        background-color: #BFCFE7;
+      }
+
+      h1{
+        text-align: center;
+        font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  top: 120px;
+  margin-bottom: 180px;
+        
+      }
+
+      .pricing-plan{
+        background-color: #222831;
+        border-radius: 20px;
+        width: 300px;
+        height: 420px;
+      }
+
+      .plan-title{
+        color: whitesmoke;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 30px;
+      }
+
+      .plan-price{
+        color: whitesmoke;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: 25px;
+
+      }
+
+      ul{
+        list-style-type: none;
+        font-size: 15px;
+      }
+
+      .plan-button{
+        display: block;
+        margin: auto;
+        color: whitesmoke;
+        border-radius: 50px;
+        height: 40px;
+        width: 80px;
+        margin-top: 30px;
+      }
+
+      .first{
+        background-color: #41B06E;
+        border-color: #41B06E;
+      }
+
+      .second{
+        background-color: #891652;
+        border-color: #891652;
+      }
+
+      .third{
+        background-color: #F57D1F;
+        border-color: #F57D1F;
+      }
+
+      li{
+        color: whitesmoke;
+        margin-bottom: 20px;
+        position: relative;
+        left: 15px;
+      }
+      hr{
+        width: 70%;
+      }
+
+      .top{
+        position: relative;
+        right: 20px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width:1250px){
+        .pricing-container{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 100%;
+          
+        }
+
+        .pricing-plan{
+          margin-bottom: 20px;
+        }
+      }
+
+      @media (min-width:1251px){
+        .pricing-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+
+        }
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Plans & Pricing</h1>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <hr>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <hr class="top">
+          <li>✅ 1 User</li>
+          <hr class="top">
+          <li>🚫 Support</li>
+          <hr class="top">
+        </ul>
+        <button class="plan-button first">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <hr>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <hr class="top">
+          <li>✅ 5 Users</li>
+          <hr class="top">
+          <li>✅ Phone &amp; Email Support</li>
+          <hr class="top">
+        </ul>
+        <button class="plan-button second">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <hr>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <hr class="top">
+          <li>✅ 10 Users</li>
+          <hr class="top">
+          <li>✅ 24/7 Support</li>
+          <hr class="top">
+        </ul>
+        <button class="plan-button third">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
